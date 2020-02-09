@@ -63,7 +63,7 @@ int main () {
 	struct sched_param param;
 
 	for (int i = 0; i < nb_th; i++) {
-		sleep(i * 2);
+		sleep(2);
 		k[i] = i;
 		pthread_attr_init (&th_attr[i]);
 		pthread_attr_setschedpolicy(&th_attr[i], SCHED_FIFO);
